@@ -12,6 +12,7 @@ namespace TestArray
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // Add existing buttons to array
             buttonArray = new Button[] { button1, button2, button3 };
 
             // Subscribe to button click events
@@ -30,24 +31,24 @@ namespace TestArray
             int index = Array.IndexOf(buttonArray, clickedButton);
             if (index >= 0)
             {
-                MessageBox.Show($"Button {index + 1} clicked!");
-                // You can add more logic here based on the button clicked
+                textBox1.Text = ($"Button {index + 1} clicked!");
+                buttonArray[index].BackColor = Color.LightBlue;
             }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            buttonArray[0].BackColor = Color.Green;
+            buttonArray[0].BackColor = Color.Red;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            buttonArray[2].BackColor = Color.Yellow;
+            buttonArray[1].BackColor = Color.Yellow;
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            buttonArray[1].BackColor = Color.Red;
+            buttonArray[2].BackColor = Color.Green;
         }
     }
 }
