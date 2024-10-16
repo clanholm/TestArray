@@ -24,7 +24,7 @@ namespace TestArray
         private void Button_Click(object sender, EventArgs e)
         {
             // Get the button that was clicked
-            Button clickedButton = sender as Button;
+            Button? clickedButton = sender as Button;
 
             // Perform actions based on which button was clicked
             int index = Array.IndexOf(buttonArray, clickedButton);
