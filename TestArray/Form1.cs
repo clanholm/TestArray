@@ -13,7 +13,7 @@ namespace TestArray
         private void Form1_Load(object sender, EventArgs e)
         {
             // Add existing buttons to array
-            buttonArray = new Button[] { button1, button2, button3 };
+            buttonArray = [button1, button2, button3];
 
             // Subscribe to button click events
             foreach (var button in buttonArray)
