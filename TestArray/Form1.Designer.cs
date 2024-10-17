@@ -108,6 +108,7 @@
             textBox1.Size = new Size(332, 37);
             textBox1.TabIndex = 6;
             textBox1.TextAlign = HorizontalAlignment.Center;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // Form1
             // 

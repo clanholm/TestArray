@@ -5,7 +5,7 @@ namespace TestArray
         // Initialize the button array with existing buttons
         private Button[] buttonArray;
 
-    public Form1()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -49,6 +49,11 @@ namespace TestArray
         private void button6_Click(object sender, EventArgs e)
         {
             buttonArray[2].BackColor = Color.Green;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
